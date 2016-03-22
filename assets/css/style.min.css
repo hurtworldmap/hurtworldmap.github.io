@@ -1,0 +1,124 @@
+html,
+body,
+#map{position:absolute;width:100%;height:100%;margin:0;padding:0;background:#dfd2ca;}
+#sidebar{position:fixed;left:0px;margin-left:0px;width:320px;height:100%;z-index:1;background:#aeaeae;color:#1d1f1d;font-family:Bebas Neue;border-right:1px solid #848484;overflow-x:hidden;}
+#sidebarpush{position:fixed;width:14px;height:19px;left:320px;background:#848484;top:0px;z-index:1;background-image:url("icons/toggle.png");cursor:pointer;}
+.logo{width:280px;height:60px;background:url(icons/hurtworld-logo-int.png);background-size:cover;display:block;}
+.version{position:absolute;left:270px;width:30px;height:46px;z-index:2;top:42px;color:#ffb400;font-family:Bebas Neue;font-size:14px;-webkit-transform:rotate(320deg);-moz-transform:rotate(320deg);-o-transform:rotate(320deg);writing-mode:lr-tb;text-shadow:3px 3px 0 #000,
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;}
+#sidebar a{color:#1d1f1d;text-decoration:none;}
+#sidebar ul{list-style:none;}
+#sidebar li{line-height:32px;white-space:normal;width:150px;overflow:hidden;float:left;list-style:none;}
+ul#content-table{margin-top:10px;float:left;margin-bottom:10px;margin-left:-20px;width:300px;}
+#sidebar li.locations{width:180px;}
+#content-table li i,
+#content-table1 li i,
+#content-table2 li i,
+#content-table3 li i,
+#content-table4 li i,
+#content-table5 li i{width:24px;height:24px;background-position:center center;background-repeat:no-repeat;background-size:contain;float:left;margin-right:5px;margin-bottom:5px;line-height:30px;}
+ul#content-table1,
+ul#content-table2,
+ul#content-table3,
+ul#content-table4,
+ul#content-table5{float:left;margin-top:0px;margin-bottom:10px;margin-left:-20px;width:300px;}
+label, input{cursor:pointer;}
+p.clear{clear:both;}
+a#Locations, a#Animals, a#Plants, a#Items, a#Resources, a#Ores{display:block;margin-bottom:4px;padding:0px 0px 0px 15px;}
+i.iShigi{background-image:url('icons/shigi.png');}
+i.iShigiWolf{background-image:url('icons/shigi-forest.png');}
+i.iShigiForest{background-image:url('icons/shigiforest.png');}
+i.iShigiArctic{background-image:url('icons/shigi-arctic.png');}
+i.iBor{background-image:url('icons/bor.png');}
+i.iRadBor{background-image:url('icons/radbor.png');}
+i.iRadBor{background-image:url('icons/radbor.png');}
+i.iTokar{background-image:url('icons/tokar.png');}
+i.iTokarBlue{background-image:url('icons/tokarblue.png');}
+i.iTokarParrot{background-image:url('icons/tokarparrot.png');}
+i.iYeti{background-image:url('icons/yetiforest.png');}
+i.iYetiArctic{background-image:url('icons/yetiarctic.png');}
+i.iOwrong{background-image:url('icons/iowrong.png');}
+i.iPitcherPlant{background-image:url('icons/ipitcherplant.png');}
+i.iSucculentSeeds{background-image:url('icons/succulentseed.png');}
+i.iItemFlint{background-image:url('icons/iitemflint.png');}
+i.iItemWood{background-image:url('icons/iitemwood.png');}
+i.iWood{background-image:url('icons/woodlog.png');}
+i.iCoal{background-image:url('icons/coal.png');}
+i.iLimestone{background-image:url('icons/limestone.png');}
+i.iFlint{background-image:url('icons/flint.png');}
+i.iDeadTree{background-image:url('icons/deadtree.png');}
+i.iIronOre{background-image:url('icons/iron.png');}
+i.iTitraniumOre{background-image:url('icons/titranium.png');}
+i.iMondiniumOre{background-image:url('icons/mondinium.png');}
+i.iUltraniumOre{background-image:url('icons/ultranium.png');}
+i.iLargeRock{background-image:url('icons/largerock.png');}
+i.iLootCrate{background-image:url('icons/lootcrate.png');}
+i.iLocations{background-image:url('icons/locations.png');}
+a#marker-delete-button{display:block;text-align:center;text-decoration:none;}
+.drop{display:block;font-size:11px;}
+.dropimgs img{width:24px;}
+.dropimgs img:hover + .dropimgtext{display:block;}
+.markername{display:block;font-weight:bold;}
+.dropimgtext{display:none;font-size:15px;top:46px;border:1px solid;padding:0px 5px;background:#aeaeae;position:absolute;left:-50px;font-family:bebas neue;}
+.AIShigiServer{display:none;}
+.AIShigiWolfServer{display:none;}
+.AIShigiForestServer{display:none;}
+.AIShigiArcticServer{display:none;}
+.AIBorServer{display:none;}
+.AIBorRadServer{display:none;}
+.AITokarServer{display:none;}
+.AITokarBlueServer{display:none;}
+.AITokarParrotServer{display:none;}
+.AIYetiForestServer{display:none;}
+.AIYetiServer{display:none;}
+.OwrongResourceNode{display:none;}
+.PitcherPlantResourceNode{display:none;}
+.SucculentResourceNode{display:none;}
+.WorldItemFlint{display:none;}
+.WorldItemWood{display:none;}
+.LogResourceNodeServer{display:none;}
+.CoalRockResourceNodeServer{display:none;}
+.SandstoneResourceNodeServer{display:none;}
+.FlintRockResourceNodeServer{display:none;}
+.Deadtree1ResourceNodeServer{display:none;}
+.Deadtree2ResourceNodeServer{display:none;}
+.Deadtree3ResourceNodeServer{display:none;}
+.IronRockResourceNodeServer{display:none;}
+.Metal2ResourceNodeServer{display:none;}
+.Metal3ResourceNodeServer{display:none;}
+.Metal4ResourceNodeServer{display:none;}
+.LargeMiningRockServer{display:none;}
+.LootCrate{display:none;}
+.LValley{display:none;}
+.LTransit{display:none;}
+.LBoonies{display:none;}
+.LFortress{display:none;}
+.LCrossroad{display:none;}
+.LAirfield{display:none;}
+.LCarrier{display:none;}
+.LDome{display:none;}
+.LArc{display:none;}
+.showcontent{display:block;}
+a#showShigi:focus{text-decoration:line-through;}
+.leaflet-control-attribution.leaflet-control{display:none;}
+#credits{border-top:1px solid #444444;border-bottom:1px solid #444444;display:block;float:left;width:300px;text-align:center;padding:5px 10px 5px;margin:0px;}
+#credits span{float:left;width:100%;}
+.created{margin:5px 0px 0px 0px;}
+.cnames{margin:5px 0px 0px 0px;}
+.legal{font-size:13px;margin:0px;}
+#legal{display:block;float:left;width:300px;text-align:center;padding:5px 10px 5px;margin:0px;}
+#legal span.text{font-size:12px;margin:0px 0px 5px 0px;}
+#legal a.website{margin:10px 0px 0px 0px;color:#f79422;font-family:Bebas Neue;font-size:15px;text-shadow:0px 2px 0 #000,
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000}
+#legal span{float:left;width:100%;}
+@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:normal;src:local('Bebas Neue'), url('files/BebasNeue.woff') format('woff');}
+::-webkit-scrollbar{width:12px;}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:0px;border-radius:0px;}
+::-webkit-scrollbar-thumb{-webkit-border-radius:0px;border-radius:0px;background:rgba(49,49,49,1);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+::-webkit-scrollbar-thumb:window-inactive{background:rgba(49,49,49,1);}

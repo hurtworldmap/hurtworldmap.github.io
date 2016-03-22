@@ -1,0 +1,511 @@
+    body {margin: 0px;font-family: Bebas Neue Bold;}
+	#map {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fbeece;
+    }
+	div.warning {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 75px;
+    z-index: 1000;
+    font-family: Bebas Neue Bold;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    background: #fff;
+	}
+	div.warning p {
+    margin: 2px 0px 2px 0px;
+	}
+	div.warning a {
+    color: #0078A8;
+	}
+	.sidebar-pane p.clear {clear: both;}
+	/* Sidebar V2 */
+	@media (min-width: 768px)
+	.sidebar {
+    border-radius: 0px;
+	}
+		.sidebar.collapsed {
+	width: 40px; }
+	@media (min-width: 768px) {
+	.sidebar {
+	top: 10px;
+	bottom: 10px;
+	transition: width 500ms; } }
+	@media (min-width: 320px) and (max-width: 767px) {
+	.sidebar {
+	width: 320px; } }
+	@media (min-width: 768px) and (max-width: 991px) {
+	.sidebar {
+	width: 350px; } }
+	@media (min-width: 992px) and (max-width: 1199px) {
+	.sidebar {
+	width: 390px; } }
+	@media (min-width: 1200px) {
+	.sidebar {
+	width: 400px; } }
+	
+	.sidebar-pane {
+	display: none;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	padding: 10px 20px; }
+	.sidebar-pane.active {
+	display: block; }
+	@media (min-width: 320px) and (max-width: 767px) {
+	.sidebar-pane {
+	min-width: 100%; } }
+	@media (min-width: 768px) and (max-width: 991px) {
+	.sidebar-pane {
+	min-width: 100%; } }
+	@media (min-width: 992px) and (max-width: 1199px) {
+	.sidebar-pane {
+	min-width: 100%; } }
+	@media (min-width: 1200px) {
+	.sidebar-pane {
+	min-width: 100%; } }
+	  
+	  
+	.sidebar-tabs > li:hover, .sidebar-tabs > ul > li:hover {
+    background-color: #fff;
+	}
+	.sidebar-tabs > ul > li.active {
+	background-color: #fff;
+	}
+	.sidebar-tabs > ul > li.active .home {
+    -webkit-filter: grayscale(0);
+	}
+	a i.home:hover,
+	a i.itemids:hover,
+	a i.info:hover,
+	a i.settings:hover{
+	-webkit-filter: grayscale(0);
+	}
+	i.home, i.itemids, i.info, i.settings {
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+	}
+	.home,
+	.itemids,
+	.info,
+	.settings {
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+	-webkit-filter: grayscale(1);
+	}
+	.home {background-image: url('../img/hurtmap.png');}
+	.itemids {background-image: url('../img/info.png');}
+	.info {background-image: url('../img/info.png');}
+	.settings {background-image: url('../img/settings.png');}
+	/*markers tab*/
+	img.logo-menu {
+    width: 100%;
+    margin: -10px 0px 10px -10px;
+	}
+	#markerslist li {
+	line-height: 18px;
+	white-space: normal;
+	width: 100%;
+	overflow: hidden;
+	float: left;
+	list-style: none;
+	}
+	#markerslist ul .content-table {
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: -20px;
+	width: 100%;
+	}
+	#markerslist li.locations {
+		width: 100%;
+	}
+	
+	#markerslist .content-table li i,
+	#markerslist .content-table1 li i,
+	#markerslist .content-table2 li i,
+	#markerslist .content-table3 li i,
+	#markerslist .content-table4 li i,
+	#markerslist .content-table5 li i {
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 4px;
+    line-height: 30px;
+	}
+	#markerslist ul.content-table,
+	#markerslist ul.content-table1,
+	#markerslist ul.content-table2,
+	#markerslist ul.content-table3,
+	#markerslist ul.content-table4,
+	#markerslist ul.content-table5 {
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: -20px;
+    width: 100%;	
+	}
+	
+	#markerslist a.Locations,
+	#markerslist a.Animals,
+	#markerslist a.Plants,
+	#markerslist a.Items,
+	#markerslist a.Resources, a.Ores {
+	display: block;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 15px;
+	font-family: Bebas Neue Bold;
+	}
+	#markerslist a {
+	color: #1d1f1d;
+	text-decoration: none;
+	}
+	#markerslist ul{
+	list-style: none;
+	padding: 0px 0px 0px 10px;
+	}
+	#markerslist label {
+	font-family: Bebas Neue Bold;	
+	}
+	.cc {
+	opacity: 0;
+	position: absolute;   
+	}
+
+	.cc, .cl {
+	display: inline-block;
+	margin: 5px;
+	cursor: pointer;
+	}
+
+	.cl {
+	position: relative;
+	}
+
+	.cc + .cl:before {
+	content: '';
+	background: #414141;
+	border: 2px solid #000;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 2px;
+	margin-right: 10px;
+	text-align: center;
+	}
+
+	.cc:checked + .cl:before {
+	background: #f79422;
+	}
+
+	.cc:focus + .cl {
+	outline: none; /* focus style */
+	}
+	
+	.credits {
+    border-top: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px 5px;
+    margin: 0px 0px 0px -20px;
+	font-family: Bebas Neue Bold;
+	}
+	.credits span {
+    float: left;
+    width: 100%;
+	}
+	.created {
+	margin: 5px 0px 0px 0px;	
+	}
+	.cnames {
+    margin: 5px 0px 0px 0px;
+	}
+	.legal {
+	font-size: 13px;
+	margin: 0px 0px 0px -20px;
+	font-family: Bebas Neue Bold;
+	}
+	.legal {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px 5px;
+    margin: 0px 0px 0px -20px;
+	}
+	.legal span.text {
+    font-size: 12px;
+    margin: 0px 0px 5px 0px;
+	}
+	#markerslist a.website{
+    margin: 10px 0px 0px 0px;
+	color: #f79422;
+	font-family: Bebas Neue Bold;
+	font-size: 15px;
+	text-shadow:
+	0px 2px 0 #000,
+	-1px -1px 0 #000, 
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000
+	}
+	.legal span {
+    float: left;
+    width: 100%;
+	}
+	
+	
+	/*Settings tab*/
+	.language {
+	margin-top: 10px;
+	font-family: Bebas Neue Bold;	
+	}
+	.en {background: url('../flags/en.png');}
+	.ru {background: url('../flags/ru.png');}
+	.br {background: url('../flags/br.png');}
+	.en,.ru,.br {
+	width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+	margin: 5px 5px 5px 0px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	border:none;
+	}
+	.sidebar-header {
+	font-family: Bebas Neue Bold;
+	font-size: 25px;
+	margin: -10px -20px 0;
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #555555;
+	}
+	.sidebar-pane p,
+	.sidebar-pane span,
+	.sidebar-pane a {
+	margin: 5px 5px 5px 0px;
+	font-size: 16px;
+	color: #333;
+	}
+
+	
+	/*
+	#sidebarhurt {
+	position: fixed;
+	left: 0px;
+	margin-left: 720px;
+	width: 320px;
+	height: 100%;
+	z-index: 1;
+	background: #aeaeae;
+	color: #1d1f1d;
+	font-family: Bebas Neue Bold;
+	border-right: 1px solid #848484;
+	overflow-x: hidden;
+	}
+	#sidebarpush{
+    position:fixed;
+    width:14px;
+    height:19px;
+    left:320px;
+    background:#848484;
+    top:0px;
+	z-index: 1;
+	background-image: url("../img/toggle.png");
+	cursor: pointer;
+	}
+	.logo {
+    width: 280px;
+    height: 60px;
+    background: url(../img/hurtworld-logo-int.png);
+    background-size: cover;
+	display: block;
+	}
+	.version {
+	position: absolute;
+	left: 270px;
+	width: 30px;
+	height: 46px;
+	z-index: 2;
+	top: 42px;
+	color: #ffb400;
+	font-family: Bebas Neue Bold;
+	font-size: 14px;
+	-webkit-transform: rotate(320deg);
+	-moz-transform: rotate(320deg);
+	-o-transform: rotate(320deg);
+	writing-mode: lr-tb;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+	}
+
+	*/
+	/* Animals */
+	#markerslist i.iShigi {background-image: url('../img/shigi.png');}
+	#markerslist i.iShigiWolf {background-image: url('../img/shigi-forest.png');}
+	#markerslist i.iShigiForest {background-image: url('../img/shigiforest.png');}
+	#markerslist i.iShigiArctic {background-image: url('../img/shigi-arctic.png');}
+	#markerslist i.iBor {background-image: url('../img/bor.png');}
+	#markerslist i.iRadBor {background-image: url('../img/radbor.png');}
+	#markerslist i.iRadBor {background-image: url('../img/radbor.png');}
+	#markerslist i.iTokar {background-image: url('../img/tokar.png');}
+	#markerslist i.iTokarBlue {background-image: url('../img/tokarblue.png');}
+	#markerslist i.iTokarParrot {background-image: url('../img/tokarparrot.png');}
+	#markerslist i.iYeti {background-image: url('../img/yetiforest.png');}
+	#markerslist i.iYetiArctic {background-image: url('../img/yetiarctic.png');}
+	/* Plants */
+	#markerslist i.iOwrong {background-image: url('../img/iowrong.png');}
+	#markerslist i.iPitcherPlant {background-image: url('../img/ipitcherplant.png');}
+	#markerslist i.iSucculentSeeds {background-image: url('../img/succulentseed.png');}
+	
+	/* World Items */
+	#markerslist i.iItemFlint {background-image: url('../img/iitemflint.png');}
+	#markerslist i.iItemWood {background-image: url('../img/iitemwood.png');}
+	/* Resources */
+	#markerslist i.iWood {background-image: url('../img/woodlog.png');}
+	#markerslist i.iCoal {background-image: url('../img/coal.png');}
+	#markerslist i.iLimestone {background-image: url('../img/limestone.png');}
+	#markerslist i.iFlint {background-image: url('../img/flint.png');}
+	#markerslist i.iDeadTree {background-image: url('../img/deadtree.png');}
+	/* Ores */
+	#markerslist i.iIronOre {background-image: url('../img/iron.png');}
+	#markerslist i.iTitraniumOre {background-image: url('../img/titranium.png');}
+	#markerslist i.iMondiniumOre {background-image: url('../img/mondinium.png');}
+	#markerslist i.iUltraniumOre {background-image: url('../img/ultranium.png');}
+	#markerslist i.iLargeRock {background-image: url('../img/largerock.png');}
+	#markerslist i.iLootCrate {background-image: url('../img/lootcrate.png');}
+	#markerslist i.iLocations {background-image: url('../img/locations.png');}
+	
+	.drop {
+    display: block;
+    font-size: 11px;
+	}
+	.dropimgs img {
+	width:24px;
+	}
+	.dropimgs img:hover + .dropimgtext {
+	display:block;		
+	}
+	.markername {
+    display: block;
+    font-weight: bold;
+	}
+	.dropimgtext {
+    display: none;
+    font-size: 15px;
+    top: 46px;
+    border: 1px solid;
+    padding: 0px 5px;
+    background: #aeaeae;
+	position: absolute;
+    left: -50px;
+    font-family: bebas neue;
+	}
+	
+	.AIShigiServer {display: none;}
+	.AIShigiWolfServer {display: none;}
+	.AIShigiForestServer {display: none;}
+	.AIShigiArcticServer {display: none;}
+	.AIBorServer {display: none;}
+	.AIBorRadServer {display: none;}
+	.AITokarServer {display: none;}
+	.AITokarBlueServer {display: none;}
+	.AITokarParrotServer {display: none;}
+	.AIYetiForestServer {display: none;}
+	.AIYetiServer {display: none;}
+	.OwrongResourceNode {display: none;}
+	.PitcherPlantResourceNode {display: none;}
+	.SucculentResourceNode {display: none;}
+	.WorldItemFlint {display: none;}
+	.WorldItemWood {display: none;}
+	.LogResourceNodeServer {display: none;}
+	.CoalRockResourceNodeServer {display: none;}
+	.SandstoneResourceNodeServer {display: none;}
+	.FlintRockResourceNodeServer {display: none;}
+	.Deadtree1ResourceNodeServer {display: none;}
+	.Deadtree2ResourceNodeServer {display: none;}
+	.Deadtree3ResourceNodeServer {display: none;}
+	.IronRockResourceNodeServer {display: none;}
+	.Metal2ResourceNodeServer {display: none;}
+	.Metal3ResourceNodeServer {display: none;}
+	.Metal4ResourceNodeServer {display: none;}
+	.LargeMiningRockServer {display: none;}
+	.LootCrate {display: none;}
+	.LValley {display: none;}
+	.LTransit {display: none;}
+	.LBoonies {display: none;}
+	.LFortress {display: none;}
+	.LCrossroad {display: none;}
+	.LAirfield {display: none;}
+	.LCarrier {display: none;}
+	.LDome {display: none;}
+	.LArc {display: none;}
+	
+	.showcontent {display: block;}
+	a#showShigi:focus {text-decoration: line-through;}
+	
+	.leaflet-control-attribution.leaflet-control {display: none;}
+	
+	
+	@font-face {
+	font-family: 'Bebas Neue Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Bebas Neue Bold'), url('../font/BebasNeueBold.woff') format('woff');
+	}
+	
+	/*Sidebar Scroll*/
+	::-webkit-scrollbar {
+		width: 16px;
+	}
+	 
+	/* Track */
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		background: rgba(49,49,49,1); 
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+	::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(49,49,49,1); 
+	}
