@@ -12,14 +12,9 @@ Unofficial Hurtworld interactive map, with a mobile & tablet friendly design. An
 
 ####What can you do to help?
 --------------------------------------
-If you notice anything missing or have any improvements please create a pull request of your changes, or link me to your forked repo. Or if you're not experienced with Javascript and Github, create a ticket or message me on [reddit](http://www.reddit.com/message/compose/?to=rogerhnn) with in game screenshots.
+If you notice anything missing or have any improvements please [create](https://github.com/hurtworldmap/hurtworldmap.github.io/issues/new) an issue. Or if you're not experienced with Javascript and Github, create a ticket or message me on [reddit](http://www.reddit.com/message/compose/?to=rogerhnn).
 
 You can also help with translating the project into other languages. You can find the file for translation [here](https://github.com/hurtworldmap/hurtworldmap.github.io/blob/master/raw/lang.js) and you can [create](https://github.com/hurtworldmap/hurtworldmap.github.io/issues/new) an issue with the changes or additions that you want.
-
-####How do I contribute code changes?
---------------------------------------
-You can [create](https://github.com/hurtworldmap/hurtworldmap.github.io/issues/new) an issue with the changes or additions that you want.
-
 
 ####Credits & Licence
 --------------------------------------
