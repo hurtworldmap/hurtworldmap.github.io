@@ -1,0 +1,84 @@
+.itemholder {
+  width: 280px;
+  height: auto;
+  background-color: #595d68;
+  display: block;
+  color: #595D68;
+  font-family: arial;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+.itemdetails{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.item-title {
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    display: block;
+    background: #484c57;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+.itemimg {
+  width: 64px;
+  height: auto;
+  
+}
+.info1 {
+  color: #d8d8da;
+  font-size: 0.80em;
+  font-weight: bold;
+  text-align: right;
+}
+.info2 {
+  color: #dc7276;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: right;
+}
+.info3 {
+  color: #d8d8da;
+  font-size: 0.75em;
+  text-align: right;
+  font-weight: bold;
+}
+.info4 {
+  color: #cb9e60;
+  font-size: 0.75em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.info5 {
+  color: #d3d3d3;
+  font-size: 0.75em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+i {
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 60px;;
+  vertical-align: middle;
+  display: inline-block;
+}
+i.i2 {
+  background-image:url(http://i.imgbox.com/d4GxNBrl.png);
+}
+i.i3 {
+  background-image:url(http://i.imgbox.com/o2quKMtE.png);
+}
+
+
