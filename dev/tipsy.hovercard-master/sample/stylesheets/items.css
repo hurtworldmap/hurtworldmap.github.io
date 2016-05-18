@@ -1,0 +1,49 @@
+.panel-default > .panel-heading {
+    color: #ffffff;
+    background-color: #333;
+    border-color: #ddd;
+}
+
+i {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 60px;;
+  vertical-align: middle;
+  display: inline-block;
+}
+i.i2 {
+  background-image:url(http://i.imgbox.com/d4GxNBrl.png);
+}
+a.btn-primary.item,
+a.btn-primary.item:hover,
+a.btn-primary.item:focus {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  border-radius: 0px;  
+  background-color: #333;
+}
+.well {
+    min-height: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #333;
+    border-radius: 0px;
+    width: auto;
+    display: inline-block;
+}
+
+.itemholder {width: 65px;
+height: 65px}
+i.i2 {
+  background-image:url(http://i.imgbox.com/d4GxNBrl.png);
+}
+i.i3 {
+  background-image:url(http://i.imgbox.com/5VDCKMhl.png);
+}
+
