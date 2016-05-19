@@ -75,7 +75,7 @@ i {
   vertical-align: middle;
   display: inline-block;
 }
-i.i3 {
+.itemimg i.i3 {
   background-image:url(http://hurtworldmap.com/items/i_03.png);
 }
 
