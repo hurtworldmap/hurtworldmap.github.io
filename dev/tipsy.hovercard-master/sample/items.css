@@ -1,4 +1,4 @@
-.singleholder {
+.sholder {
   width: 280px;
   height: auto;
   background-color: #595d68;
@@ -8,12 +8,12 @@
   padding: 6px;
   margin-bottom: 10px;
 }
-.singledetails{
+.sdetails{
   width: 100%;
   margin-bottom: 10px;
 }
 
-.item-title {
+.stitle {
     color: #fff;
     font-size: 14px;
     font-family: Arial;
@@ -25,7 +25,7 @@
     padding: 4px;
     margin-bottom: 5px;
 }
-.itemimg {
+.simg {
   width: 64px;
   height: auto;
   
@@ -63,7 +63,7 @@
   margin-bottom: 10px;
 }
 
-i {
+i.is {
   width: 64px;
   height: 64px;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ i {
   vertical-align: middle;
   display: inline-block;
 }
-.itemimg i.i3 {
+i.is3 {
   background-image:url(http://hurtworldmap.com/items/i_03.png);
 }
 
