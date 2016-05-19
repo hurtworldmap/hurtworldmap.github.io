@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="new.css" rel="stylesheet" type="text/css" />
+ <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+ <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+  <script src="https://raw.githubusercontent.com/rrrene/tipsy.hovercard/master/sample/javascripts/jquery.tipsy.js" type="text/javascript"></script>
+  <script src="https://raw.githubusercontent.com/rrrene/tipsy.hovercard/master/lib/jquery.tipsy.hovercard.js" type="text/javascript"></script>
+ <meta charset=utf-8 />
+ <title>JS Bin</title>
+  <script>
+  jQuery(function ($) {
+    $("*[rel=tipsy]").tipsy();
+    $("*[rel=hovercard]").tipsyHoverCard();
+  });
+</script>
+</head>
+<body>
+  
+  <a href="some.html" rel="hovercard" title="loading..." data-url="http://hurtworldmap.com/dev/items.html">Hovercard w/ AJAX Flavour</a>
+  
+  <div class="menu">
+    <span>Categories</span>
+    <ul class="menulist">
+      <li>Tools</li>
+      <li>Materials</li>
+      <li>Ammo</li>
+      <li>Weapons</li>
+      <li>Gear</li>
+      <li>Hair</li>
+      <li>Machines</li>
+      <li>Traps</li>
+    </ul>
+  </div>
+<div class="itemlist">
+<!-- Item 2 -->
+<div class="item" role="button" data-toggle="collapse" href="#item2" aria-expanded="false" aria-controls="collapseExample">
+    <div class="itemimg"><i class="i3"></i></div>
+    <div class="nameid">
+    <p class="itemname">Workbench</p>
+    <p class="id">Item ID: 2</p>
+    </div>
+</div>
+<div class="collapse" id="item2">
+  <div class="crafting">
+    <span class="materials">Materials</span>
+    <table>
+      <tr>
+        <td class="ingredient">
+          <div class="limit"><i class="i21"></i>
+          <span class="qnt">10</span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+  
+<!-- Item 89 -->
+<div class="item" role="button" data-toggle="collapse" href="#item89" aria-expanded="false" aria-controls="collapseExample">
+    <div class="itemimg"><i class="i89"></i></div>
+    <div class="nameid">
+    <p class="itemname">Flint Hatchet</p>
+    <p class="id">Item ID: 89</p>
+    </div>
+</div>
+<div class="collapse" id="item89">
+  <div class="crafting">
+    <span class="materials">Materials</span>
+    <table>
+      <tr>
+        <td class="ingredient">
+          <div class="limit"><i class="i21"></i>
+          <span class="qnt">5</span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i17"></i>
+          <span class="qnt">5</span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+  
+<!-- Item 78 -->
+<div class="item" role="button" data-toggle="collapse" href="#item78" aria-expanded="false" aria-controls="collapseExample">
+    <div class="itemimg"><i class="i78"></i></div>
+    <div class="nameid">
+    <p class="itemname">Iron Axe</p>
+    <p class="id">Item ID: 78</p>
+    </div>
+</div>
+<div class="collapse" id="item78">
+  <div class="crafting">
+    <span class="materials">Materials</span>
+    <table>
+      <tr>
+        <td class="ingredient">
+          <div class="limit"><i class="i36 "></i>
+          <span class="qnt">5</span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i21"></i>
+          <span class="qnt">5</span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+        <td class="ingredient">
+          <div class="limit"><i class="i0"></i>
+          <span class="qnt"></span></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</body>
+</html>
