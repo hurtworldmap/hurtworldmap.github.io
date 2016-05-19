@@ -1,4 +1,4 @@
-.itemholder {
+.singleholder {
   width: 280px;
   height: auto;
   background-color: #595d68;
@@ -8,7 +8,7 @@
   padding: 6px;
   margin-bottom: 10px;
 }
-.itemdetails{
+.singledetails{
   width: 100%;
   margin-bottom: 10px;
 }
@@ -74,11 +74,8 @@ i {
   vertical-align: middle;
   display: inline-block;
 }
-i.i2 {
-  background-image:url(./images/i_03.png);
-}
-i.i3 {
-  background-image:url(http://i.imgbox.com/o2quKMtE.png);
+i.i17 {
+  background-image:url(http://hurtworldmap.com/items/i_17.png);
 }
 
 
