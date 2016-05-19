@@ -12,6 +12,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
+
 .item-title {
     color: #fff;
     font-size: 14px;
@@ -74,8 +75,8 @@ i {
   vertical-align: middle;
   display: inline-block;
 }
-i.i17 {
-  background-image:url(http://hurtworldmap.com/items/i_17.png);
+i.i3 {
+  background-image:url(http://hurtworldmap.com/items/i_03.png);
 }
 
 
