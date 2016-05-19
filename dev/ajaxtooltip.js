@@ -1,3 +1,6 @@
+//Ajax Tooltip script: By JavaScript Kit: http://www.javascriptkit.com
+//Last update (July 10th, 08'): Modified tooltip to follow mouse, added Ajax "loading" message.
+
 var ajaxtooltip={
 	fadeeffect: [true, 300], //enable Fade? [true/false, duration_milliseconds]
 	useroffset: [10, 10], //additional x and y offset of tooltip from mouse cursor, respectively
