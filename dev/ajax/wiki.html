@@ -1,33 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      font-family: Helvetica, Tahoma, sans-serif;
-      font-size: 13px;
-    }
-  </style>
-  <link href="stylesheets/tipsy.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/tipsy.hovercard.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/itemsnew.css" media="screen" rel="stylesheet" type="text/css" />
-  <script src="javascripts/jquery-2.0.3.min.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.tipsy.js" type="text/javascript"></script>
-  <script src="../lib/jquery.tipsy.hovercard.js" type="text/javascript"></script>
-  <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+ <script src="http://code.jquery.com/jquery.min.js"></script>
+ <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+ <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+ <link href="wiki.css" rel="stylesheet" type="text/css" />
+ <script src="ajaxtooltip.js"></script>
+ 
+ <meta charset=utf-8 />
+ <title>JS Bin</title>
 </head>
 <body>
-  
-  <input type="button" value="new link" onClick="$('body').prepend('<a href=index.html rel=hovercard title=\'Another tipsyHoverCard<br>(you can hover)\'>Hovercard example</a>');">
-  
-  <a href="index.html" rel="tipsy" title="tipsy tooltip">example link</a> |
-  |
-  <a href="index.html" rel="hovercard" title="A tipsyHoverCard<br>(you can hover)">Hovercard example</a>
-  |
-  <a href="index.html" rel="hovercard" title="loading..." data-url="tip.html">Hovercard w/ AJAX Flavour</a>
-  
-  <p></p>
-  
-  <body>
   <div class="menu">
     <span>Categories</span>
     <ul class="menulist">
@@ -44,10 +27,10 @@
 <div class="itemlist">
 <!-- Item 2 -->
 <div class="item" role="button" data-toggle="collapse" href="#item2" aria-expanded="false" aria-controls="collapseExample">
-    <div class="itemimg"><a href="#" rel="hovercard" title="loading..." data-url="items.html><i class="i3"></i></a></div>
+    <div class="itemimg"><i title="ajax:item03.html" class="i3"></i></div>
     <div class="nameid">
     <p class="itemname">Workbench</p>
-    <p class="id">Item ID: 3</p>
+    <p class="id">Item ID: 2</p>
     </div>
 </div>
 <div class="collapse" id="item2">
@@ -174,38 +157,5 @@
   </div>
 </div>
 </div>
-  
-  
-  <p></p>
-	<div>
-		<a class="btn btn-primary item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-		<i class="i3" rel="hovercard" title="loading..." data-url="items.html"></i>
-		<span class="itemname">Workbench</span>
-		</a>
-		<div class="collapse" id="collapseExample">
-		<div class="well">
-		  <table class="itemarea">
-			<tr>
-			  <td class="itemholder"><i class="i3"></i></td>
-			  <td class="itemholder"><i class="i2"></i></td>
-			  <td class="itemholder"><i class="i2"></i></td>
-			</tr>
-			<tr>
-			  <td class="itemholder"><i class="i2"></i></td>
-			  <td class="itemholder"><i class="i2"></i></td>
-			  <td class="itemholder"><i class="i2"></i></td>
-			</tr>
-		  </table>
-		</div>
-		</div>
-	</div>
-  
-  <script>
-    jQuery(function ($) {
-      $("*[rel=tipsy]").tipsy();
-      $("*[rel=hovercard]").tipsyHoverCard();
-    });
-  </script>
-
 </body>
 </html>

@@ -1,4 +1,4 @@
-.itemholder {
+.sholder {
   width: 280px;
   height: auto;
   background-color: #595d68;
@@ -8,11 +8,12 @@
   padding: 6px;
   margin-bottom: 10px;
 }
-.itemdetails{
+.sdetails{
   width: 100%;
   margin-bottom: 10px;
 }
-.item-title {
+
+.stitle {
     color: #fff;
     font-size: 14px;
     font-family: Arial;
@@ -24,45 +25,15 @@
     padding: 4px;
     margin-bottom: 5px;
 }
-.itemimg {
+.simg {
   width: 64px;
   height: auto;
   
 }
-.info1 {
-  color: #d8d8da;
-  font-size: 0.80em;
-  font-weight: bold;
-  text-align: right;
+i.is3 {
+  background-image:url(http://hurtworldmap.com/items/i_03.png);
 }
-.info2 {
-  color: #dc7276;
-  font-size: 0.75em;
-  font-weight: bold;
-  text-align: right;
-}
-.info3 {
-  color: #d8d8da;
-  font-size: 0.75em;
-  text-align: right;
-  font-weight: bold;
-}
-.info4 {
-  color: #cb9e60;
-  font-size: 0.75em;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-.info5 {
-  color: #d3d3d3;
-  font-size: 0.75em;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-
-i {
+i.is {
   width: 64px;
   height: 64px;
   background-repeat: no-repeat;
@@ -74,11 +45,35 @@ i {
   vertical-align: middle;
   display: inline-block;
 }
-i.i2 {
-  background-image:url(http://i.imgbox.com/d4GxNBrl.png);
+.info1,
+.info2,
+.info3,
+.info4,
+.info5 {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: right;
 }
-i.i3 {
-  background-image:url(http://i.imgbox.com/o2quKMtE.png);
+.info1 {
+  color: #d8d8da;
 }
+.info2 {
+  color: #dc7276;
+}
+.info3 {
+  color: #d8d8da;
+}
+.info4 {
+  color: #cb9e60;
+  display: block;
+  margin-bottom: 10px;
+}
+.info5 {
+  color: #d3d3d3;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
 
 

@@ -1,5 +1,5 @@
 //Ajax Tooltip script: By JavaScript Kit: http://www.javascriptkit.com
-//Last update (July 10th, 08'): Modified tooltip to follow mouse, added Ajax "loading" message.
+//Last update (May 16th, 16'): Modified tooltip to work with jQuery 1.7+
 
 var ajaxtooltip={
 	fadeeffect: [true, 300], //enable Fade? [true/false, duration_milliseconds]
@@ -37,7 +37,7 @@ var ajaxtooltip={
 jQuery(document).ready(function(){
 	ajaxtooltip.iebody=(document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
 	var tooltips=[] //array to contain references to all tooltip DIVs on the page
-	$('*[@title^="ajax:"]').each(function(index){ //find all links with "title=ajax:" declaration
+	$('*[title^="ajax:"]').each(function(index){ //find all links with "title=ajax:" declaration
 		this.titleurl=jQuery.trim(this.getAttribute('title').split(':')[1]) //get URL of external file
 		this.titleposition=index+' pos' //remember this tooltip DIV's position relative to its peers
 		tooltips.push($('<div class="ajaxtooltip"></div>').appendTo('body'))
