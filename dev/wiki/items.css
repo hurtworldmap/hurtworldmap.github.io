@@ -48,9 +48,7 @@ i.is {
 }
 .info1,
 .info2,
-.info3,
-.info4,
-.info5 {
+.info3 {
   font-size: 0.75em;
   font-weight: bold;
   text-align: right;
@@ -65,11 +63,17 @@ i.is {
   color: #d8d8da;
 }
 .info4 {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: left;
   color: #cb9e60;
   display: block;
   margin-bottom: 10px;
 }
-.info5 {
+.info5 {  
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: left;
   color: #d3d3d3;
   display: block;
   margin-bottom: 10px;

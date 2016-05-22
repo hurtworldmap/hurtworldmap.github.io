@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- <script src="http://code.jquery.com/jquery.min.js"></script>
- <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+ <script src="https://code.jquery.com/jquery.min.js"></script>
+ <link href="https://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
  <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
  <link href="wiki.css" rel="stylesheet" type="text/css" />
  <script src="ajaxtooltip.js"></script>
@@ -24,18 +24,20 @@
       <li>Traps</li>
     </ul>
   </div>
+  <button class="lang" data-lang="en">Eng</button>
+<button class="lang" data-lang="br">Por</button>
 <div class="itemlist">
-<!-- Item 3 -->
-<div class="item" role="button" data-toggle="collapse" href="#item3" aria-expanded="false" aria-controls="collapseExample">
+<!-- Item 2 -->
+<div class="item" role="button" data-toggle="collapse" href="#item2" aria-expanded="false" aria-controls="collapseExample">
     <div class="itemimg"><i title="ajax:i03_workbench.html" class="i3"></i></div>
     <div class="nameid">
-    <p class="itemname">Workbench</p>
-    <p class="id">Item ID: 3</p>
+    <p class="itemname" data-i18n="03name">Workbench</p>
+    <p class="id">Item ID: 2</p>
     </div>
 </div>
-<div class="collapse" id="item3">
+<div class="collapse" id="item2">
   <div class="crafting">
-    <span class="materials">Materials</span>
+    <span class="materials" data-i18n="materials">Materials</span>
     <table>
       <tr>
         <td class="ingredient">
@@ -73,13 +75,13 @@
 <div class="item" role="button" data-toggle="collapse" href="#item89" aria-expanded="false" aria-controls="collapseExample">
     <div class="itemimg"><i class="i89"></i></div>
     <div class="nameid">
-    <p class="itemname">Flint Hatchet</p>
+    <p class="itemname" data-i18n="89name">Flint Hatchet</p>
     <p class="id">Item ID: 89</p>
     </div>
 </div>
 <div class="collapse" id="item89">
   <div class="crafting">
-    <span class="materials">Materials</span>
+    <span class="materials" data-i18n="materials">Materials</span>
     <table>
       <tr>
         <td class="ingredient">
@@ -117,13 +119,13 @@
 <div class="item" role="button" data-toggle="collapse" href="#item78" aria-expanded="false" aria-controls="collapseExample">
     <div class="itemimg"><i class="i78"></i></div>
     <div class="nameid">
-    <p class="itemname">Iron Axe</p>
+    <p class="itemname" data-i18n="78name">Iron Axe</p>
     <p class="id">Item ID: 78</p>
     </div>
 </div>
 <div class="collapse" id="item78">
   <div class="crafting">
-    <span class="materials">Materials</span>
+    <span class="materials" data-i18n="materials">Materials</span>
     <table>
       <tr>
         <td class="ingredient">
@@ -157,5 +159,9 @@
   </div>
 </div>
 </div>
+	<!-- i18next -->
+	<script src="i18next-1.6.3.min.js"></script>
+	<!-- Lang -->
+	<script src="lang.js"></script>
 </body>
 </html>
