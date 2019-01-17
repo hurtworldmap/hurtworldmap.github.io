@@ -1,4 +1,4 @@
-#[Hurtworldmap.com](hurtworldmap.github.io)
+#[Hurtworldmap.com](https://hurtworldmap.github.io)
 --------------------------------------
 Unofficial Hurtworld interactive map, with a mobile & tablet friendly design. Any contributions, suggestions, bug reports, etc are welcome. Currently 'Diemensland' map available with markers for all its resources locations.
 
